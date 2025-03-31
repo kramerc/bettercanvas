@@ -18,17 +18,32 @@
     "default_title": "Better Canvas"
   },
   "background": {
-    "service_worker": "js/background.js"
+    "scripts": [
+      "js/background.js"
+    ]
   },
   "options_page": "html/options.html",
   "content_scripts": [
     {
-      "matches": ["https://*/*"],
-      "js": ["js/content.js"],
-      "css": ["css/content.css"],
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "css": [
+        "css/content.css"
+      ],
       "run_at": "document_start"
     }
   ],
-  "permissions": ["storage"],
-  "default_locale": "en"
+  "permissions": [
+    "storage"
+  ],
+  "default_locale": "en",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{8927f234-4dd9-48b1-bf76-44a9e153eee0}"
+    }
+  }
 }
