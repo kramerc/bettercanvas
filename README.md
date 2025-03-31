@@ -1,3 +1,9 @@
+# Better Canvas Firefox
+
+Forked version with a Firefox compatible manifest to provide updates as upstream is presently behind at version 5.12.0 on AMO.
+
+---
+
 ![Better Canvas](/icon/icon-wide.png)
 
 # Better Canvas
